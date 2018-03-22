@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+ }
+.vertical-menu{
+ margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+</style>
+<body background="http://www.dw.com/image/18188333_401.jpg">
+<h1 align="center">SELECT THE CROP FOR MORE INFORMATION</h1>
+<div class="vertical-menu">
+  <a href="{% url 'statecrop'%}">STATE WISE CROP PREFERENCE</a>
+  <a href="{% url 'state' %}">SUGARCANE</a>
+  <a href="#">WHEAT</a>
+  <a href="#">RICE</a>
+  
+</div>
+</body>
+<html>
